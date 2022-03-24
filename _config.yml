@@ -3,7 +3,7 @@
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-# url:                   https://username.github.io
+url:                   https://bluersh.github.io
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
@@ -17,44 +17,55 @@
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  en
+lang:                  ko-KR, en-US
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Starter Kit
+title:                 Bluersh
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  Bluersh 커리어 및 개발 일지
 
 # A shorter description for the sidebar.
-tagline:               Change `tagline` in `_config.yml`
+tagline:               IT Planner & System Engineer
 
 # A list of keywords for your blog
-keywords:              []
+keywords:              [Coding, Blog, Git, Seonhu, Review, Atlassian]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/logo.png
+logo:                  /assets/logo/imoji_sh.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
+  name:                SeonHu Kim
+  email:               fairsh96@gmail.com
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
-    url:               /example/
-  - title:             Documentation
-    url:               /docs/
-  - title:             About
-    url:               /about/
+  #- title:            About
+  #  url:              /about/  
+  - title:             Algorithm
+    url:               /Algorithm/
+    # 알고리즘 관련 포스트 카테고리
+  - title:             Atlassian
+    url:               /Atlassian/
+    # 아틀라시안 솔루션 관련 포스트 카테고리
+  - title:             Cloud
+    url:               /Cloud/
+    # AWS 및 클라우드 관련 포스트 카테고리
+  - title:             Insight
+    url:               /Insight/
+    # 요즘 본인의 생각 관련 포스트 카테고리
+  - title:             Portfolio
+    url:               /Portfolio/
+    # 개인 포트폴리오 
+
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -80,15 +91,15 @@ paginate_path:         /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-theme: jekyll-theme-hydejack
-# remote_theme: hydecorp/hydejack@v9
+# theme: jekyll-theme-hydejack
+remote_theme: hydecorp/hydejack@v9
 
 
 # Customizaton
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
+accent_image:          /assets/background/background.png
 accent_color:          rgb(79,177,186)
 
 # This is used for the `theme-color` meta tag,
@@ -383,7 +394,7 @@ titles_from_headings:
   collections:         true
 
 compress_html:
-  comments:            ["<!--", "-->"]
+  comments:            ["<!-- ", " -->"]
   clippings:           all
   endings:             all
   ignore:
@@ -403,21 +414,21 @@ jekyll_compose:
         A short ~160 character description of your post for search engines,
         social media previews, etc.
       image:
-        path: /assets/img/sidebar-bg.jpg
+        path: /assets/background/background.png
     posts:
       layout: post
       description: > 
         A short ~160 character description of your post for search engines,
         social media previews, etc.
       image:
-        path: /assets/img/sidebar-bg.jpg
+        path: /assets/background/background.png
     projects:
       layout: project
       description: > 
         A short ~160 character description of your post for search engines,
         social media previews, etc.
       image:
-        path: /assets/img/sidebar-bg.jpg
+        path: /assets/background/background.png
       links:
         - title: Project Link
           url: https://example.com
